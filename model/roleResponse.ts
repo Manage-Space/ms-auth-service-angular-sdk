@@ -9,17 +9,15 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
+import { ERoles } from './eRoles';
 
 
 export interface RoleResponse { 
     /**
      * Role ID
      */
-    roleId: string;
-    /**
-     * Code name
-     */
-    codeName: string;
+    roleId: number;
+    codeName: ERoles;
     /**
      * Display name
      */
@@ -29,4 +27,7 @@ export interface RoleResponse {
      */
     description: string;
 }
+export namespace RoleResponse {
+}
+
 
