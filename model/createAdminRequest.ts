@@ -9,6 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
+import { ERoles } from './eRoles';
 
 
 export interface CreateAdminRequest { 
@@ -37,9 +38,9 @@ export interface CreateAdminRequest {
      */
     password: string;
     /**
-     * Role codenames
+     * Role codenames associated with user.
      */
-    roles: Array<string>;
+    roles: Array<ERoles>;
     /**
      * Optional array of site ids for the specific organization.
      */

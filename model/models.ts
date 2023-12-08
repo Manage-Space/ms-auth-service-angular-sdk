@@ -11,6 +11,7 @@ export * from './createAdmin200Response';
 export * from './createAdminPublicRequest';
 export * from './createAdminRequest';
 export * from './createUserResponse';
+export * from './eRoles';
 export * from './emailRequest';
 export * from './forbiddenError403Response';
 export * from './forbiddenError403ResponseError';

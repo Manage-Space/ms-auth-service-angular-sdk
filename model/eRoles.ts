@@ -9,13 +9,17 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { ERoles } from './eRoles';
 
 
-export interface RoleRequest { 
-    /**
-     * Role codenames associated with user.
-     */
-    roles: Array<ERoles>;
-}
+export type ERoles = 'GA' | 'OA' | 'SA' | 'M' | 'O' | 'W' | 'SM';
+
+export const ERoles = {
+    Ga: 'GA' as ERoles,
+    Oa: 'OA' as ERoles,
+    Sa: 'SA' as ERoles,
+    M: 'M' as ERoles,
+    O: 'O' as ERoles,
+    W: 'W' as ERoles,
+    Sm: 'SM' as ERoles
+};
 
