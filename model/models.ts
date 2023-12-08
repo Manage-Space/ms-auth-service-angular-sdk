@@ -28,7 +28,6 @@ export * from './refreshTokenResponse';
 export * from './resendVerification200Response';
 export * from './resetPasswordRequest';
 export * from './roleRequest';
-export * from './roleResponse';
 export * from './siteAssignmentRequest';
 export * from './unauthorizedError401Response';
 export * from './unauthorizedError401ResponseError';

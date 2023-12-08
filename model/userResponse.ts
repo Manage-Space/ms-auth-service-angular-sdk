@@ -9,7 +9,6 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { RoleResponse } from './roleResponse';
 
 
 export interface UserResponse { 
@@ -24,7 +23,7 @@ export interface UserResponse {
     /**
      * Middle name
      */
-    middleName?: string;
+    middleName: string | null;
     /**
      * Last name
      */
@@ -48,7 +47,7 @@ export interface UserResponse {
     /**
      * Updated by
      */
-    updatedBy?: string;
+    updatedBy: string | null;
     /**
      * Created at.
      */
@@ -56,14 +55,27 @@ export interface UserResponse {
     /**
      * Updated at.
      */
-    updatedAt?: string;
+    updatedAt: string | null;
     /**
-     * Role definitions associated with user.
+     * Role codenames associated with user.
      */
-    roles: Array<RoleResponse>;
+    roles: Array<UserResponse.RolesEnum>;
     /**
      * A list of sites associated with this user.
      */
-    assignedSites: string;
+    assignedSites: Array<string>;
 }
+export namespace UserResponse {
+    export type RolesEnum = 'GA' | 'OA' | 'SA' | 'M' | 'O' | 'W' | 'SM';
+    export const RolesEnum = {
+        Ga: 'GA' as RolesEnum,
+        Oa: 'OA' as RolesEnum,
+        Sa: 'SA' as RolesEnum,
+        M: 'M' as RolesEnum,
+        O: 'O' as RolesEnum,
+        W: 'W' as RolesEnum,
+        Sm: 'SM' as RolesEnum
+    };
+}
+
 
