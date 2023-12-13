@@ -13,7 +13,7 @@
 
 export interface LogoutUserResponse { 
     /**
-     * A valid user id.
+     * User ID
      */
     userId: string;
 }

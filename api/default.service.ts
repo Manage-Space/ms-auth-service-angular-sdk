@@ -21,8 +21,6 @@ import { Observable }                                        from 'rxjs';
 // @ts-ignore
 import { BadRequestError400Response } from '../model/badRequestError400Response';
 // @ts-ignore
-import { ConfirmAdminSignUp200Response } from '../model/confirmAdminSignUp200Response';
-// @ts-ignore
 import { ConfirmPasswordResetRequest } from '../model/confirmPasswordResetRequest';
 // @ts-ignore
 import { ConfirmSignUpRequest } from '../model/confirmSignUpRequest';
@@ -140,9 +138,9 @@ export class DefaultService {
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
      */
-    public confirmAdminSignUp(confirmSignUpRequest: ConfirmSignUpRequest, observe?: 'body', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<ConfirmAdminSignUp200Response>;
-    public confirmAdminSignUp(confirmSignUpRequest: ConfirmSignUpRequest, observe?: 'response', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<HttpResponse<ConfirmAdminSignUp200Response>>;
-    public confirmAdminSignUp(confirmSignUpRequest: ConfirmSignUpRequest, observe?: 'events', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<HttpEvent<ConfirmAdminSignUp200Response>>;
+    public confirmAdminSignUp(confirmSignUpRequest: ConfirmSignUpRequest, observe?: 'body', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<CreateAdmin200Response>;
+    public confirmAdminSignUp(confirmSignUpRequest: ConfirmSignUpRequest, observe?: 'response', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<HttpResponse<CreateAdmin200Response>>;
+    public confirmAdminSignUp(confirmSignUpRequest: ConfirmSignUpRequest, observe?: 'events', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<HttpEvent<CreateAdmin200Response>>;
     public confirmAdminSignUp(confirmSignUpRequest: ConfirmSignUpRequest, observe: any = 'body', reportProgress: boolean = false, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<any> {
         if (confirmSignUpRequest === null || confirmSignUpRequest === undefined) {
             throw new Error('Required parameter confirmSignUpRequest was null or undefined when calling confirmAdminSignUp.');
@@ -189,7 +187,7 @@ export class DefaultService {
         }
 
         let localVarPath = `/auth/orgs/users/confirm`;
-        return this.httpClient.request<ConfirmAdminSignUp200Response>('post', `${this.configuration.basePath}${localVarPath}`,
+        return this.httpClient.request<CreateAdmin200Response>('post', `${this.configuration.basePath}${localVarPath}`,
             {
                 context: localVarHttpContext,
                 body: confirmSignUpRequest,
@@ -209,9 +207,9 @@ export class DefaultService {
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
      */
-    public confirmPasswordReset(confirmPasswordResetRequest: ConfirmPasswordResetRequest, observe?: 'body', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<ConfirmAdminSignUp200Response>;
-    public confirmPasswordReset(confirmPasswordResetRequest: ConfirmPasswordResetRequest, observe?: 'response', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<HttpResponse<ConfirmAdminSignUp200Response>>;
-    public confirmPasswordReset(confirmPasswordResetRequest: ConfirmPasswordResetRequest, observe?: 'events', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<HttpEvent<ConfirmAdminSignUp200Response>>;
+    public confirmPasswordReset(confirmPasswordResetRequest: ConfirmPasswordResetRequest, observe?: 'body', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<CreateAdmin200Response>;
+    public confirmPasswordReset(confirmPasswordResetRequest: ConfirmPasswordResetRequest, observe?: 'response', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<HttpResponse<CreateAdmin200Response>>;
+    public confirmPasswordReset(confirmPasswordResetRequest: ConfirmPasswordResetRequest, observe?: 'events', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<HttpEvent<CreateAdmin200Response>>;
     public confirmPasswordReset(confirmPasswordResetRequest: ConfirmPasswordResetRequest, observe: any = 'body', reportProgress: boolean = false, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<any> {
         if (confirmPasswordResetRequest === null || confirmPasswordResetRequest === undefined) {
             throw new Error('Required parameter confirmPasswordResetRequest was null or undefined when calling confirmPasswordReset.');
@@ -258,7 +256,7 @@ export class DefaultService {
         }
 
         let localVarPath = `/auth/password/confirm`;
-        return this.httpClient.request<ConfirmAdminSignUp200Response>('post', `${this.configuration.basePath}${localVarPath}`,
+        return this.httpClient.request<CreateAdmin200Response>('post', `${this.configuration.basePath}${localVarPath}`,
             {
                 context: localVarHttpContext,
                 body: confirmPasswordResetRequest,
@@ -279,9 +277,9 @@ export class DefaultService {
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
      */
-    public confirmUserSignUp(orgId: string, confirmSignUpRequest: ConfirmSignUpRequest, observe?: 'body', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<ConfirmAdminSignUp200Response>;
-    public confirmUserSignUp(orgId: string, confirmSignUpRequest: ConfirmSignUpRequest, observe?: 'response', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<HttpResponse<ConfirmAdminSignUp200Response>>;
-    public confirmUserSignUp(orgId: string, confirmSignUpRequest: ConfirmSignUpRequest, observe?: 'events', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<HttpEvent<ConfirmAdminSignUp200Response>>;
+    public confirmUserSignUp(orgId: string, confirmSignUpRequest: ConfirmSignUpRequest, observe?: 'body', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<CreateAdmin200Response>;
+    public confirmUserSignUp(orgId: string, confirmSignUpRequest: ConfirmSignUpRequest, observe?: 'response', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<HttpResponse<CreateAdmin200Response>>;
+    public confirmUserSignUp(orgId: string, confirmSignUpRequest: ConfirmSignUpRequest, observe?: 'events', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<HttpEvent<CreateAdmin200Response>>;
     public confirmUserSignUp(orgId: string, confirmSignUpRequest: ConfirmSignUpRequest, observe: any = 'body', reportProgress: boolean = false, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<any> {
         if (orgId === null || orgId === undefined) {
             throw new Error('Required parameter orgId was null or undefined when calling confirmUserSignUp.');
@@ -331,7 +329,7 @@ export class DefaultService {
         }
 
         let localVarPath = `/auth/orgs/${this.configuration.encodeParam({name: "orgId", value: orgId, in: "path", style: "simple", explode: false, dataType: "string", dataFormat: undefined})}/users/confirm`;
-        return this.httpClient.request<ConfirmAdminSignUp200Response>('post', `${this.configuration.basePath}${localVarPath}`,
+        return this.httpClient.request<CreateAdmin200Response>('post', `${this.configuration.basePath}${localVarPath}`,
             {
                 context: localVarHttpContext,
                 body: confirmSignUpRequest,
@@ -549,15 +547,15 @@ export class DefaultService {
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
      */
-    public getUserRoles(orgId: string, userId: string, observe?: 'body', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<GetUsers200Response>;
-    public getUserRoles(orgId: string, userId: string, observe?: 'response', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<HttpResponse<GetUsers200Response>>;
-    public getUserRoles(orgId: string, userId: string, observe?: 'events', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<HttpEvent<GetUsers200Response>>;
-    public getUserRoles(orgId: string, userId: string, observe: any = 'body', reportProgress: boolean = false, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<any> {
+    public getUser(orgId: string, userId: string, observe?: 'body', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<GetUsers200Response>;
+    public getUser(orgId: string, userId: string, observe?: 'response', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<HttpResponse<GetUsers200Response>>;
+    public getUser(orgId: string, userId: string, observe?: 'events', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<HttpEvent<GetUsers200Response>>;
+    public getUser(orgId: string, userId: string, observe: any = 'body', reportProgress: boolean = false, options?: {httpHeaderAccept?: 'application/json;v&#x3D;1', context?: HttpContext}): Observable<any> {
         if (orgId === null || orgId === undefined) {
-            throw new Error('Required parameter orgId was null or undefined when calling getUserRoles.');
+            throw new Error('Required parameter orgId was null or undefined when calling getUser.');
         }
         if (userId === null || userId === undefined) {
-            throw new Error('Required parameter userId was null or undefined when calling getUserRoles.');
+            throw new Error('Required parameter userId was null or undefined when calling getUser.');
         }
 
         let localVarHeaders = this.defaultHeaders;

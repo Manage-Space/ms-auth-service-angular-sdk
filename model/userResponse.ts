@@ -21,9 +21,9 @@ export interface UserResponse {
      */
     firstName: string;
     /**
-     * Middle name
+     * Middle initial
      */
-    middleName: string | null;
+    middleInitial: string | null;
     /**
      * Last name
      */

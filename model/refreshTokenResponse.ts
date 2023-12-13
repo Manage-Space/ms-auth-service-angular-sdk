@@ -14,20 +14,20 @@ import { AttributeResponse } from './attributeResponse';
 
 export interface RefreshTokenResponse { 
     /**
-     * Access Token
+     * User ID
      */
-    accessToken: string;
+    userId: string;
+    /**
+     * Array of attributes.
+     */
+    userAttributes: Array<AttributeResponse>;
     /**
      * ID Token
      */
     idToken: string;
     /**
-     * User ID
+     * Access Token
      */
-    userId: string;
-    /**
-     * Array of attributes
-     */
-    userAttributes: Array<AttributeResponse>;
+    accessToken: string;
 }
 

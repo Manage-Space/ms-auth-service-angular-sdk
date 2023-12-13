@@ -13,11 +13,11 @@
 
 export interface AttributeResponse { 
     /**
-     * Cognito attribute key.
+     * Attribute key
      */
     name: string;
     /**
-     * Cognito attribute value.
+     * Attribute value
      */
     value: string;
 }

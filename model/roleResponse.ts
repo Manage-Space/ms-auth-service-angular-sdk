@@ -9,6 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
+import { RolePermissionResponse } from './rolePermissionResponse';
 import { ERoles } from './eRoles';
 
 
@@ -26,6 +27,10 @@ export interface RoleResponse {
      * Description of the org admin role.
      */
     description: string;
+    /**
+     * Role permissions (function, description)
+     */
+    rolePermissions: Array<RolePermissionResponse>;
 }
 export namespace RoleResponse {
 }

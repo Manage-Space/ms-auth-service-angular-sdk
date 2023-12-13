@@ -9,12 +9,17 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { AdminGetUserResponse } from './adminGetUserResponse';
 
 
-export interface CreateAdmin200Response { 
-    data?: Array<AdminGetUserResponse>;
-    success?: boolean;
-    error?: object;
+export interface RolePermissionResponse { 
+    /**
+     * Permission ID
+     */
+    permissionId: number;
+    _function: string;
+    /**
+     * Detailed description.
+     */
+    description: string;
 }
 

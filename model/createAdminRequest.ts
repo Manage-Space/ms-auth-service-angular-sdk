@@ -22,7 +22,7 @@ export interface CreateAdminRequest {
      */
     lastName: string;
     /**
-     * Middle name
+     * Middle initial
      */
     middleInitial?: string;
     /**

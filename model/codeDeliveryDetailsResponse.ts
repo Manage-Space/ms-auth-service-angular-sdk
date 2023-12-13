@@ -13,16 +13,16 @@
 
 export interface CodeDeliveryDetailsResponse { 
     /**
-     * The location the code has been sent to
+     * The location the code has been sent to.
      */
-    Destination: string;
+    destination: string;
     /**
-     * The way the code was send
+     * The way the code was sent.
      */
-    DeliveryMedium: string;
+    deliveryMedium: string;
     /**
-     * The name of the attribute
+     * The name of the attribute.
      */
-    AttributeName: string;
+    attributeName: string;
 }
 
