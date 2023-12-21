@@ -11,7 +11,7 @@
  */
 
 
-export type ERoles = 'GA' | 'OA' | 'SA' | 'M' | 'O' | 'W' | 'SM';
+export type ERoles = 'GA' | 'OA' | 'SA' | 'M' | 'O' | 'W' | 'SM' | 'P';
 
 export const ERoles = {
     Ga: 'GA' as ERoles,
@@ -20,6 +20,7 @@ export const ERoles = {
     M: 'M' as ERoles,
     O: 'O' as ERoles,
     W: 'W' as ERoles,
-    Sm: 'SM' as ERoles
+    Sm: 'SM' as ERoles,
+    P: 'P' as ERoles
 };
 

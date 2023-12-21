@@ -66,7 +66,7 @@ export interface UserResponse {
     assignedSites: Array<string>;
 }
 export namespace UserResponse {
-    export type RolesEnum = 'GA' | 'OA' | 'SA' | 'M' | 'O' | 'W' | 'SM';
+    export type RolesEnum = 'GA' | 'OA' | 'SA' | 'M' | 'O' | 'W' | 'SM' | 'P';
     export const RolesEnum = {
         Ga: 'GA' as RolesEnum,
         Oa: 'OA' as RolesEnum,
@@ -74,7 +74,8 @@ export namespace UserResponse {
         M: 'M' as RolesEnum,
         O: 'O' as RolesEnum,
         W: 'W' as RolesEnum,
-        Sm: 'SM' as RolesEnum
+        Sm: 'SM' as RolesEnum,
+        P: 'P' as RolesEnum
     };
 }
 
